@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.fas').click(function(){
+                $('.fas').toggleClass('active');
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+     <img src="images/S.logoo.png"  class="logo">
+
+        <ul id="sidemenu">
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">LEARN</a></li>
+            <li><a href="#portfolio">PROJECT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi, I'm <span>Suraj</span> Barole</h1>
+        <span class="fr">FRONT-END DEVELOPER  <i class="fa-sharp fa-solid fa-code-commit"></i>  CODER <i class="fa-solid fa-grip-lines-vertical"></i></span>
+        <!-- <a href="images/Resume2023.pdf" class="btn btn2"><i class="fa-solid fa-download"></i>Download CV</a> -->
+        <!-- <h5>Front-End Developer | Cricketer</h5> -->
+    </div>
+  </div>
+</div>
+
+
+<!--  ------  ----  About me section  -----  -- -->
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+              <img src="images/portfolio.jpg" class="photo">
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-titel">About Me</h1>
+              <p>My name is Suraj Barole from Madhya Pradesh,I'm front-end Developer.<br>
+                I desing and code beautifully simple things,and I love what I do </p>
+                 <div class="tab-titels">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    
+                 </div>
+                 <div class="tab-contains active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-end</span> Developer</li>
+                        <li>Learning <span> Back-end</span> Devepment</li>
+                        <li><span>JAVA</span> Coding</li>
+                        <li><span>Esports</span> following</li>
+                        <li>Playing <span> Cricket</span>Tournaments</li>
+
+                    </ul>
+                 </div>
+                 <div class="tab-contains" id="education">
+                    <ul>
+                        <li><span>2017 </span> 10Th MP Board School</li>
+                        <li><span> 2019 </span> 12Th MP Board School</li>
+                        <li><span>2019-2013</span> B.Tech - CS</li>
+                       
+                    </ul>
+                 </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+-------------------Learn and skill section ------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-titel">Learn & Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-c"></i>
+                <h2>C</h2>
+                <p>basic of c</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-file"></i>
+                <h2>C++</h2>
+                <p>Intermedate of c++</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>JAVA</h2>
+                <p>Good Coding in JAVA</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>HTML</h2>
+                <p>HTML stands for Hyper Text Markup language. <br>
+                     HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>CSS</h2>
+                <p>CSS (Cascading Style Sheets) <br>
+                     is used to style and layout web pages</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-js"></i>
+                <h2>JAVASCRIPT</h2>
+                <p>JavaScript is a scripting language that enables you to create <br>
+                     dynamically updating content, control multimedia, animate images, and pretty</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------------- project section-------------------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-titel">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/calcibgn.jpg" class="photo1" >
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>This is Simple Calculator Using HTML,CSS and JavaScript</p>
+                    <a href="https://calculatorsuraj.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/stop watch photo.jpg" class="photo1" >
+                <div class="layer">
+                    <h3>Stop Watch</h3>
+                    <p>this is stop Watch </p>
+                    <a href="https://surajstopwatch.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/stop watch photo.jpg" class="photo1" >
+                <div class="layer">
+                    <h3>Stop Watch</h3>
+                    <p>this is stop Watch </p>
+                    <a href="https://surajstopwatch.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------- contact section------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i>surajbarole1@gmail.com</p>
+                <p><i class="fa-solid fa-circle-user"></i>7879155672</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Surajbarole.1234"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/suraj_barole09_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/suraj-barole-876873228/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Surajbarole"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Resume2023.pdf" download="" class="btn btn2"><i class="fa-solid fa-download"></i>Download CV</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made with <i class="fa-solid fa-heart"></i> by Suraj Barole</p>
+    </div>
+</div>
+
+
+
+
+
+<script>
+  
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontains = document.getElementsByClassName("tab-contains");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontain of tabcontains){
+        tabcontain.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+     function openmenu(){
+        sidemenu.style.right = "0";
+     }
+     function closemenu(){
+        sidemenu.style.right = "-200px";
+     }
+
+
+</script>
+
+
+</body>
+</html>
